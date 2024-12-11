@@ -3,7 +3,7 @@ employee management system
 
 The Project is build in laravel framework
 
--------Go inside the project folder (example-app) and run the following to get the vendor folder---
+-------Go inside the project folder (example-app) and run the following to get the vendor folder---------------
 -composer dump-autoload
 -composer install
 
