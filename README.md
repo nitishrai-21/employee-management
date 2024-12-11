@@ -2,6 +2,11 @@
 employee management system
 
 The Project is build in laravel framework
+
+-------Go inside the project folder (example-app) and run the following to get the vendor folder---
+-composer dump-autoload
+-composer install
+
 URL of the project : http://127.0.0.1:8000/api/employee/list  
 
 ---- MySQL connect string----------
