@@ -42,7 +42,7 @@ Route::get('logs-files/{filename}', [EmployeeController::class, 'logsFiles']);
 composer require league/csv
 
 
-------------- Some possible improvement in the current code
+------------- Some possible improvement in the current code -------------------------
 1. Some additional check for input validations in the backend code
 2. Customized error messages to the users.
 3. Make the import csv job as independent process and inform the user via email once the csv is processed (i.e. User don't need to wait on the screen for the entire file to process, he/she just need to wait till the file processing starts)
