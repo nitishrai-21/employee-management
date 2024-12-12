@@ -9,7 +9,7 @@ The Project is build in laravel framework
 
 URL of the project : http://127.0.0.1:8000/api/employee/list  
 
----- MySQL connect string----------
+---- MySQL connect string (inside .evn file)----------
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1    
 DB_PORT=3306        //port number
@@ -19,7 +19,7 @@ DB_PASSWORD=      //no password
 
 -------------List of all available routes in the project and are tested via Postman ------------------
 
-//import employee csv route   =>     (Postman URL = http://127.0.0.1:8000/api/employee)
+//import employee csv route   =>     (Postman URL = http://127.0.0.1:8000/api/employee    form-data: csv_file)
 Route::post('employee', [EmployeeController::class, 'import']);
 
 //list all the employees (with default pagination limit as 100)  => (Postman URL = http://127.0.0.1:8000/api/employee/list)
@@ -40,4 +40,10 @@ Route::get('logs-files/{filename}', [EmployeeController::class, 'logsFiles']);
 
 ------------------ Following libraries has been installed via composer----------------
 composer require league/csv
+
+
+------------- Some possible improvement in the current code
+1. Some additional check for input validations in the backend code
+2. Customized error messages to the users.
+3. Make the import csv job as independent process and inform the user via email once the csv is processed (i.e. User don't need to wait on the screen for the entire file to process, he/she just need to wait till the file processing starts)
 
