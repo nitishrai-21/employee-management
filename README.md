@@ -6,6 +6,7 @@ The Project is build in laravel framework
 -------Go inside the project folder (example-app) and run the following to get the vendor folder---------------
 -composer dump-autoload
 -composer install
+-run the project by firing the following command inside the project folder: php artisan serve
 
 URL of the project : http://127.0.0.1:8000/api/employee/list  
 
